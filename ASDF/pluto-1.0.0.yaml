@@ -1,0 +1,29 @@
+
+%YAML 1.1
+---
+$schema: http://stsci.edu/schemas/yaml-schema/draft-01
+
+title: Mickey's pet
+description: |
+  Basic info and a picture of Mickie's 
+  dog Pluto.
+
+type: object
+properties:
+  age:
+    title: The age of Pluto
+    type: object
+    properties:
+      birthday:
+        title: Pluto's first showing
+        tag: tag:stsci.edu:asdf/time/time-1.1.0
+  mass:
+    title: How much he weighs.
+    tag: tag:stsci.edu:asdf/unit/quantity-1.1.0
+  picture:
+    tag: tag:stsci.edu:asdf/core/ndarray-1.0.0
+  name:
+    title: Name
+    type: string
+required: [name, picture]
+...
