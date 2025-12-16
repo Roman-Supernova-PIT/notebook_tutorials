@@ -1,0 +1,17 @@
+If you haven't already created a virtual environment, you can create an conda env using the requirements.yaml file in this folder
+
+> conda env create -f requirements.yaml
+
+That should create an environment named "asdf-example".
+Activate the environment before starting the notebook:
+
+> conda activate asdf-example
+> jupyter notebook
+
+
+## If you haven't downloaded any example data
+You can execute the grab_example_data.py script to download some examples
+
+> python grab_example_data.py 
+
+This script include STPSF data, you can comment out the download line if you dont want those.
